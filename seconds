@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+class time
+{
+    private:
+     int seconds,hrs,min,sec;
+     public:
+       void entertime(void);
+       void conversion(void);
+       void display(void);
+};
+void time::entertime(void)
+{
+    cout<<"Enter the time"<<endl;
+    cout<<"Enter hours"<<endl;
+    cin>>hrs;
+    cout<<"Enter minutes"<<endl;
+    cin>>min;
+    cout<<"Enter seconds"<<endl;
+    cin>>sec;
+}
+void time::conversion(void)
+{
+    seconds=hrs*3600+min*60+sec;
+}
+void time::display(void)
+{
+    cout<<"hours="<<hrs;
+    cout<<"minutes="<<min;
+    cout<<"seconds="<<sec;
+    cout<<"total seconds is"<<seconds;
+}
+int main()
+{
+    time T
+    T.entertime();
+    T.conversion();
+    T.display();
+    return 0;
+}
